@@ -14,6 +14,7 @@ import io.kafbat.ui.serdes.builtin.ConsumerOffsetsSerde;
 import io.kafbat.ui.serdes.builtin.HexSerde;
 import io.kafbat.ui.serdes.builtin.Int32Serde;
 import io.kafbat.ui.serdes.builtin.Int64Serde;
+import io.kafbat.ui.serdes.builtin.MessagePackSerde;
 import io.kafbat.ui.serdes.builtin.ProtobufFileSerde;
 import io.kafbat.ui.serdes.builtin.ProtobufRawSerde;
 import io.kafbat.ui.serdes.builtin.StringSerde;
@@ -49,6 +50,7 @@ public class SerdesInitializer {
             .put(AvroEmbeddedSerde.name(), AvroEmbeddedSerde.class)
             .put(Base64Serde.name(), Base64Serde.class)
             .put(HexSerde.name(), HexSerde.class)
+            .put(MessagePackSerde.name(), MessagePackSerde.class)
             .put(UuidBinarySerde.name(), UuidBinarySerde.class)
             .put(ProtobufRawSerde.name(), ProtobufRawSerde.class)
             .build(),
